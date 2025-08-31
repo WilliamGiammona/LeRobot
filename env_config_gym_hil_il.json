@@ -1,0 +1,22 @@
+{
+  "mode": "record",
+  "repo_id": "YOUR_HF_USERNAME/il_gym",
+  "num_episodes": 30,
+
+  "device": "mps",
+
+  "task": "PandaPickCubeKeyboard-v0",
+
+  "env_kwargs": {
+    "render": true,
+    "record_video": true,
+    "camera_ids": ["front"],
+    "max_episode_steps": 200
+  },
+
+  "dataset_kwargs": {
+    "push_to_hub": false,
+    "local_output_dir": "outputs/datasets/il_gym",
+    "fps": 20
+  }
+}
